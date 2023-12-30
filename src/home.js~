@@ -1,0 +1,10 @@
+import {createElement, createImage} from './helpers.js';
+
+export default function () {
+	alert("test");
+const text = "All the non-food you can eat. Eats what's left on someone else's plate, if nobody gets there first. A thrilling experience!";
+// createImage('boks.jpg', 'content', 800, 20); TODO Add image support in webpack
+createElement('h1', 'No Food', 'content');
+createElement('p', text, 'content');
+};
+
