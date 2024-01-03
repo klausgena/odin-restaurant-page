@@ -1,8 +1,8 @@
-import {createElement, createImage} from './helpers.js';
-import menuData from './data/menu.csv';
+import {createElement, createImage} from '../helpers.js';
 
 export default function () {
-const text = "Menu";
+    const logo = "PRESTOPRESTO";
+    createElement('nav', '', 'content');
 createElement('h1', 'No Food', 'content');
 createElement('p', text, 'content');
 };

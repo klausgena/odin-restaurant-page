@@ -4,13 +4,21 @@ function createImage (imageSrc, parent, width, height) {
 	myImage.src = imageSrc;
 	parentDiv.appendChild(myImage);
 }
-function createElement(element, text, parent) {
-	const myHeader = document.createElement(element);
+function createElement(element, text, parent, elementID) {
+	const myElement = document.createElement(element);
 	const parentDiv = document.getElementById(parent);
-	myHeader.textContent = text;
-	parentDiv.appendChild(myHeader);
+    myElement.textContent = text;
+    if (elementID) {
+	myElement.setAttribute("id", elementID);
+    };
+	parentDiv.appendChild(myElement);
 }
-export {createImage, createElement};
+function createElsFromArr(el, arr, parent) {
+    arr.forEach(
+	(item) => createElement(el, item, parent)
+    );
+}
+export {createImage, createElement, createElsFromArr};
 
 
 
