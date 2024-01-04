@@ -32,6 +32,5 @@ export default function () {
     form.appendChild(message);
     form.appendChild(button);
     const textDiv = document.getElementById("text");
-    alert('dodod');
     textDiv.appendChild(form);
 };
