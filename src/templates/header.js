@@ -1,5 +1,4 @@
 import {createElement, createImage} from '../helpers.js';
-// TODO out of content and A links hover and stuff
 export default function (headerMenuList) {
     const logo = "PRESTOPRESTO";
     createElement('nav', '', 'main', 'header-menu');
@@ -8,5 +7,9 @@ export default function (headerMenuList) {
     createElement('h1', logo, 'header-menu-left');
     createElement('ul', '', 'header-menu-right', 'menu-ul');
     headerMenuList.forEach(
-	(item) => createElement('li', item.toUpperCase(), 'menu-ul', item));
-};
+	(item) => {
+	    let link = document.createElement("a");
+	    link.textContent = item.toUpperCase();
+	    createElement('li', link, 'menu-ul', item);
+	})
+}

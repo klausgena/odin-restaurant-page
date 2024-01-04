@@ -6,5 +6,5 @@ const text = "Menu";
 createElement('h1', 'No Food', 'content');
 createElement('p', text, 'content');
 };
-alert(menuData);
+alert("new edit");
 console.log(menuData); 
