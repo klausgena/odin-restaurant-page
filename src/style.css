@@ -128,3 +128,6 @@ body {
 	text-transform: uppercase;
 	font-family: 'OswaldRegular';
 }
+.underline {
+    text-decoration: underline;
+}

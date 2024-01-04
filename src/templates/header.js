@@ -6,10 +6,14 @@ export default function (headerMenuList) {
     createElement('div', '', 'header-menu', 'header-menu-right');
     createElement('h1', logo, 'header-menu-left');
     createElement('ul', '', 'header-menu-right', 'menu-ul');
+	    const rightMenu = document.getElementById('menu-ul');
     headerMenuList.forEach(
 	(item) => {
 	    let link = document.createElement("a");
+	    let li = document.createElement("li");
 	    link.textContent = item.toUpperCase();
-	    createElement('li', link, 'menu-ul', item);
-	})
+	    link.setAttribute("id", item);
+	    li.appendChild(link);
+	    rightMenu.appendChild(li);
+	    	})
 }

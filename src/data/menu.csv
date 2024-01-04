@@ -1,7 +1,7 @@
-name;price;desc;pic
-"erwt";"0,99";"chlorofyl";""
-"mayo";"0,40";"olie";""
-"kruimel";"20";"budget";""
-"friet";"1,5";"weelde";""
-"pasta";"3,00";"overdaad";""
-"ketchup";"0,3";"warm";""
+Name;Price;Description
+"erwt";"0,99";"chlorofyl"
+"mayo";"0,40";"olie"
+"kruimel";"20";"budget"
+"friet";"1,5";"weelde"
+"pasta";"3,00";"overdaad"
+"ketchup";"0,3";"warm"

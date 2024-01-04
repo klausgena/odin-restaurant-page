@@ -4,8 +4,6 @@ import contactPage from './contact.js';
 import './style.css';
 import header from './templates/header.js';
 import footer from './templates/footer.js';
-// TODO HEADER AND FOOTER oUT OF CONTENT DIV
-// Create content div
 const contentDiv = document.createElement('div');
 contentDiv.setAttribute('id', 'content');
 const mainDiv = document.getElementById("main");
@@ -21,10 +19,20 @@ menu.onclick = function(event) {
     const content = document.getElementById("content");
     content.textContent = "";
     if (target.id == "menu") {
+	const contact = document.getElementById("contact");
+	contact.classList.remove("underline");
+	target.className = "underline";
 	menuPage();
     } else if (target.id == "contact") {
+	const menu = document.getElementById("menu");
+	menu.classList.remove("underline");
+	target.className = "underline";
 	contactPage();
     } else {
+	const contact = document.getElementById("contact");
+	const menu  = document.getElementById("menu");
+	contact.classList.remove("underline");
+	menu.classList.remove("underline");
 	homePage();
     }
 };

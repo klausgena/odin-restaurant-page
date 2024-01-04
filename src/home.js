@@ -5,7 +5,6 @@ import yaml from './data/home.yaml';
 
 export default function () {
     const heroSlogan1 = "All you can't eat - and less!";
-  // todo create textcontent:  const subTitle = "Eats what's left on someone else's plate, if nobody gets there first. A thrilling experience!";
     createElement('div', '', 'content', 'hero');
     createImage(headerImage, 'hero', 1920, 1280); 
     createElement('h2', heroSlogan1, 'hero');
